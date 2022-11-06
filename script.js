@@ -65,3 +65,13 @@ function handler2(event) {
         $('.content__hr-top-2').css('width', '25%');
     }
 }
+
+$(document ).ready(function() {
+    $('.dropdown ul>li').click(function(){
+      $('.dropdown ul>li').each(function(){
+        $(this).removeClass('drop-selected');
+      });
+      $(this).toggleClass('drop-selected');
+      $('.dropdown>span').text($(this).attr("val"))
+    });
+  });
