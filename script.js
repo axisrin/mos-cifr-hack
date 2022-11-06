@@ -52,3 +52,16 @@ function handler(event) {
         $('.content__hr-top').css('width', '25%');
     }
 }
+
+let btn_line_2 = document.querySelector('.container-with-hr-2');
+
+btn_line_2.onmouseover = btn_line_2.onmouseout = handler2;
+
+function handler2(event) {
+    if (event.type === 'mouseover') {
+        $('.content__hr-top-2').css('width', '90%');
+    }
+    if (event.type === 'mouseout') {
+        $('.content__hr-top-2').css('width', '25%');
+    }
+}
