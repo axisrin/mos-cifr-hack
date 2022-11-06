@@ -66,7 +66,7 @@ function handler2(event) {
     }
 }
 
-$(document ).ready(function() {
+$(document).ready(function() {
     $('.dropdown ul>li').click(function(){
       $('.dropdown ul>li').each(function(){
         $(this).removeClass('drop-selected');
