@@ -36,16 +36,19 @@ let timer = setInterval(function () {
         $('.content__header h1 , .page__header h1').css('box-shadow', '0px 2px 0px 0px' + color);
     }, 3100);
 
-let lineTimes = setInterval(function () {
-    $('.content__hr-top').css('width', '20%');
-}, 1000)
+// let lineTimes = setInterval(function () {
+//     $('.content__hr-top').css('width', '20%');
+// }, 1000)
 
 let btn_line = document.querySelector('.button-for-js-1');
 
 btn_line.onmouseover = btn_line.onmouseout = handler;
 
 function handler(event) {
-    if (event.type == 'mouseover') {
-        $('.content__hr-top').css('width', '20%');
+    if (event.type === 'mouseover') {
+        $('.content__hr-top').css('width', '90%');
+    }
+    if (event.type === 'mouseout') {
+        $('.content__hr-top').css('width', '25%');
     }
 }
